@@ -1,0 +1,16 @@
+export enum ResponseType {
+    CREATED = 1,
+    UPDATED = 2,
+    FALLO = 3,
+    EMAIL_NO_ENCONTRADO = 4,
+    USER_ISFOUND = 5,
+    USER_LOGEADO = 6,
+    EMAIL_VALIDATION_FAIL = 7,
+    EMAIL_NOT_FOUD = 8,
+    PASSWORD_VALIDATION_FAIL = 9,
+    GET = 10,
+    NO_ENCONTRADO = 11,
+    FALLO_CREATE_PHONE = 12,
+    FALLO_CREATE_DATOS_USER = 13,
+    DELETED = 14,
+}

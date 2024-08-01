@@ -1,0 +1,16 @@
+/* app.component.scss */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Ajusta la alineación según tus necesidades */
+    justify-content: stretch; /* Ajusta la justificación según tus necesidades */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  lib-template-test-ng {
+    flex: 1; /* Ocupa todo el espacio disponible en el contenedor */
+  }
+  

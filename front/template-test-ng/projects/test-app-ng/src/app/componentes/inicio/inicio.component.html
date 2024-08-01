@@ -1,0 +1,49 @@
+<mat-grid-list cols="1" rowHeight="100px" class="centered-grid">
+        <form [formGroup]="formUsuarios">
+     
+   
+      <mat-grid-tile>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput type="text" formControlName="email">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password"  formControlName="password">
+        </mat-form-field>
+      </mat-grid-tile>
+
+      @if(!isLogin){
+        <mat-grid-tile>
+          <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput type="text"  formControlName="userName">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <button [disabled]="formUsuarios.invalid" mat-flat-button color="primary" (click)="login()">Iniciar Sesion </button>
+        </mat-grid-tile>
+      }
+      <mat-grid-tile>
+        <button [disabled]="formUsuarios.invalid" mat-flat-button color="primary" (click)="Registrar()">Registrar</button>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <button  mat-flat-button color="primary" (click)="noUserRegister()">no eres usuario registrado</button>
+      </mat-grid-tile>
+    </form>           
+</mat-grid-list>
+
+ @if (isFound) {
+    <app-informacion-user [userName]="userName" [email]="email"></app-informacion-user>
+ }
+
+
+ 
+    
+
+    
+  
+  
